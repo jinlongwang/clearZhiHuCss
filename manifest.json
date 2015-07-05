@@ -1,0 +1,20 @@
+{
+  "name": "clearZhihuCss",
+  "version": "1.0",
+  "description": "nobody can see what i'm look for",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "clear css",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-1.11.2.js","content.js"]
+    }
+  ],
+  "manifest_version": 2
+}
